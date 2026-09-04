@@ -41,7 +41,7 @@ The evaluation framework was benchmarked across standard machine learning datase
 * **Wine Dataset**
 * **Wholesale Customers Dataset**
 
-Across evaluations on multiple underlying clustering algorithms—including **$K$-Means**, **Agglomerative Hierarchical Clustering**, and **Dirichlet Process Gaussian Mixture Models (DP-GMM)**—the framework provided robust, consistent cluster selection while quantifying model uncertainty via normalized posterior probabilities.
+Across evaluations on multiple underlying clustering algorithms including **$K$-Means**, **Agglomerative Hierarchical Clustering**, and **Dirichlet Process Gaussian Mixture Models (DP-GMM)** the framework provided robust, consistent cluster selection while quantifying model uncertainty via normalized posterior probabilities.
 
 ---
 
