@@ -43,21 +43,4 @@ The evaluation framework was benchmarked across standard machine learning datase
 
 Across evaluations on multiple underlying clustering algorithms including **$K$-Means**, **Agglomerative Hierarchical Clustering**, and **Dirichlet Process Gaussian Mixture Models (DP-GMM)** the framework provided robust, consistent cluster selection while quantifying model uncertainty via normalized posterior probabilities.
 
----
 
-## Quickstart
-
-```python
-import numpy as np
-import pandas as pd
-from sklearn.cluster import KMeans
-from sklearn.datasets import load_iris
-
-# 1. Load sample dataset
-X, _ = load_iris(return_X_y=True)
-
-# 2. Evaluate K-Means models from K=2 to K=6 using the Bayesian framework
-from cluster_selection import evaluate_kmeans_models
-
-results_df = evaluate_kmeans_models(X, k_range=range(2, 7), sigma2=1.0, prior_type="bic")
-print(results_df.sort_values(by="posterior_prob", ascending=False))
