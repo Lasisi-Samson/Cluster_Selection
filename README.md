@@ -1,5 +1,5 @@
 # Cluster_Selection
-A Bayesian Framework that selects optimal cluster count in a dataset with attached level of uncertainty.
+A Bayesian Framework that selects optimal cluster count in clustering models with attached level of uncertainty.
 
 
 
